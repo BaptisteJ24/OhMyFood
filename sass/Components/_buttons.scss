@@ -1,0 +1,12 @@
+.btn {
+    background: linear-gradient(map-get($color, pink), map-get($color, purple));
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    border: 0;
+    &:visited {
+        color: white;
+    }
+}
+

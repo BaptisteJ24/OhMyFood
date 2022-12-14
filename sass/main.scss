@@ -1,0 +1,22 @@
+@import "./Utils/variables";
+@import "./Utils/functions";
+@import "./Utils/mixins";
+
+@import "./Base/reset";
+@import "./Base/typography";
+
+@import "./Components/buttons";
+
+@import "./Layout/header";
+@import "./Layout/cards";
+
+@import "./Pages/index";
+
+
+
+
+
+.img-logo{
+    width: 100%;
+    margin: 0 auto;
+}

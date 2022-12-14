@@ -1,0 +1,21 @@
+{
+  "name": "projet_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "OhMyFood Website",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix":"postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaptisteJ24/Projet_3_OhMyFood.git"
+  },
+  "author": "Baptiste JAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaptisteJ24/Projet_3_OhMyFood/issues"
+  },
+  "homepage": "https://github.com/BaptisteJ24/Projet_3_OhMyFood#readme",
+  "browserslist": "last 4 versions"
+}
