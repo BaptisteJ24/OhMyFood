@@ -1,0 +1,292 @@
+.main {
+    width: 100%;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+}
+
+.location {
+    background-color: #eaeaea;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.1);
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__text {
+        font-weight: 500;
+    }
+}
+
+.presentation {
+    @include flex-container;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0;
+    text-align: center;
+
+    &--beige {
+        background-color: map-get($color, beige);
+    }
+
+    &__title {
+        width: 65%;
+        max-width: 250px;
+        min-width: 187px;
+        margin-bottom: 15px;
+
+    }
+
+    &__paragraph {
+        font-size: map-get($font-size, 18px);
+        font-weight: 400;
+        width: 80%;
+        max-width: 416px;
+        min-width: 315px;
+        margin-bottom: 30px;
+    }
+
+    &__btn {
+        margin-bottom: 10px;
+    }
+}
+
+
+.functioning {
+    padding: 35px 20px;
+    margin: 10px auto 0;
+
+    @include mobile-only {
+        max-width: 515px;
+    }
+
+    &__title {
+        margin: 0 0 30px -15px;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__cards {
+        @include flex-container;
+        align-items: center;
+        min-height: 70px;
+        min-width: fit-content;
+        margin: 0 auto;
+        padding: 0 1% 0 0;
+        margin-bottom: 25px;
+        counter-increment: number;
+
+        &::before {
+            // This is the number brefore the card.
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            background-color: map-get($color, purple);
+            color: map-get($color, beige);
+            font-size: map-get($font-size, 13px);
+            padding: 2px;
+            margin-left: -10px;
+            content: counter(number);
+        }
+    }
+
+
+}
+
+.restaurant {
+    padding: 50px 20px 20px;
+    margin: 0 auto;
+
+    @include mobile-only {
+        max-width: 515px;
+    }
+
+    &-container {
+        background-color: map-get($color, beige);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        list-style-type: none;
+        @include flex-container;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 25px;
+        height: 100%;
+    }
+
+    &__cards {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        height: map-get($cards-height, restaurant);
+        max-height: map-get($cards-height, restaurant);
+        position: relative;
+    }
+
+    .img-container {
+        width: 100%;
+        height: calc(map-get($cards-height, restaurant) * 70/100);
+
+        >.img-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            padding: 5px 10px;
+            background-color: map-get($color, green);
+            border: 1px solid map-get($color, green);
+            color: darken(map-get($color, green), 40%);
+            font-weight: 500;
+            font-size: map-get($font-size, 14px);
+            border-radius: map-get($border-radius, very-small);
+        }
+    }
+
+    .card-content {
+        @include flex-container;
+        flex-direction: row;
+        margin: auto 0;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+
+        &__text {
+            @include flex-container;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            margin: auto 0;
+            padding: 15px;
+            width: 70%;
+
+            &__title {
+                margin-bottom: 5px;
+                font-weight: 800;
+            }
+
+            &__description {
+                font-size: map-get($font-size, 17px);
+                font-weight: 400;
+            }
+        }
+
+        &__icon {
+            width: 30%;
+            margin: auto 0;
+            text-align: center;
+        }
+    }
+}
+
+
+.menu {
+    @include flex-container;
+    flex-direction: column;
+    background-color: map-get($color, beige);
+    width: 100%;
+    height: 100%;
+    border-radius: map-get($border-radius, extra-large) map-get($border-radius, extra-large) 0 0;
+    transform: translate(0, -50px);
+    margin-bottom: -50px;
+    padding: 30px 15px;
+
+    &__title-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-size: map-get($font-size, 28px);
+    }
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__cards {
+        flex-direction: row;
+        justify-content: space-between;
+        height: map-get($cards-height, menu);
+        max-height: map-get($cards-height, menu);
+        padding: 15px;
+
+        &__title {
+            font-size: map-get($font-size, 16px);
+            font-weight: 400;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 40px;
+                height: 3px;
+                background-color: map-get($color, green);
+                margin-top: 5px;
+            }
+        }
+    }
+
+    &__name-description {
+        @include flex-container;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    &__name {
+        font-weight: 700;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &__description {
+        font-size: map-get($font-size, 16px);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__price {
+        font-size: map-get($font-size, 16px);
+        font-weight: 600;
+        color: rgba($color: #000000, $alpha: 0.9);
+        align-self: flex-end;
+        text-align: end;
+        width: 20%;
+    }
+
+    &__btn {
+        margin: 20px auto;
+        width: 180px;
+    }
+}
