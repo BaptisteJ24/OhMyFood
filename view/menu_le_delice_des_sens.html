@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>OhMyFood - Le délice des sens</title>
+    <link rel="icon" type="image/png" href="../assets/logo/ohmyfood.png">
+
+    <meta name="Content-Language" content="fr">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="OhMyFood front page">
+    <meta charset="UTF-8">
+
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
+    <script src="https://kit.fontawesome.com/b84ad8c20e.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <header class="header">
+        <a href="../index.html" class="header__icon"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+        <div class="header__logo">
+            <img src="../assets/logo/ohmyfood.png" alt="logo OhMyFood" class="header__logo__img">
+        </div>
+    </header>
+
+    <main class="main">
+        <header class="main-header">
+            <img src="../assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                alt="Photo représentant un plat de restaurant. Au premier plan, on y trouve une assiette large, dans laquelle du poisson baigne dans une sauce avec des légumes."
+                class="main-header__img">
+        </header>
+
+        <form class="menu">
+            <div class="menu__content">
+                <div class="menu__title-btn-heart">
+                    <h1 class="menu__title shrikhand">Le délice des sens</h1>
+                    <button class="btn-heart menu__btn-heart" type="button">
+                        <span class="far fa-heart btn-heart--empty"></span>
+                        <span class="btn-heart--hide__container">
+                            <span class="fas fa-heart btn-heart--hide"></span>
+                        </span>
+                    </button>
+                </div>
+                <section id="starters" class="menu__section menu__section--1">
+                    <h2 class="menu__section__title">Entrées</h2>
+                    <input type="radio" name="starter" value="starter1" class="menu__input" id="starter-1">
+                    <label for="starter-1" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Tartare de thon</span>
+                                <span class="menu__description">Assaisonné au yuzu</span>
+                            </span>
+                            <span class="menu__price">25€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                    <input type="radio" name="starter" value="starter2" class="menu__input" id="starter-2">
+                    <label for="starter-2" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Bouchée de homard croustillant</span>
+                                <span class="menu__description">Et sa farandole de petits légumes</span>
+                            </span>
+                            <span class="menu__price">35€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                    <input type="radio" name="starter" value="starter3" class="menu__input" id="starter-3">
+                    <label for="starter-3" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Velouté de cèpes</span>
+                                <span class="menu__description">Aux truffes</span>
+                            </span>
+                            <span class="menu__price">20€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                </section>
+
+                <section id="dishs" class="menu__section menu__section--2">
+                    <h2 class="menu__section__title">Plats</h2>
+                    <input type="radio" name="dish" value="dish1" class="menu__input" id="dish-1">
+                    <label for="dish-1" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Poulet rôti aux herbes de Provence</span>
+                                <span class="menu__description">Et sa crème de truffe</span>
+                            </span>
+                            <span class="menu__price">40€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                    <input type="radio" name="dish" value="dish2" class="menu__input" id="dish-2">
+                    <label for="dish-2" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Langouste rôtie</span>
+                                <span class="menu__description">Et ses légumes de saison</span>
+                            </span>
+                            <span class="menu__price">35€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                    <input type="radio" name="dish" value="dish3" class="menu__input" id="dish-3">
+                    <label for="dish-3" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Côte de boeuf Angus</span>
+                                <span class="menu__description">Et sa purée de panais</span>
+                            </span>
+                            <span class="menu__price">44€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                </section>
+
+                <section id="desserts" class="menu__section menu__section--1">
+                    <h2 class="menu__section__title">Dessert</h2>
+                    <input type="radio" name="dessert" value="dessert1" class="menu__input" id="dessert-1">
+                    <label for="dessert-1" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Farandole de desserts</span>
+                                <span class="menu__description">Du chef</span>
+                            </span>
+                            <span class="menu__price">18€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                    <input type="radio" name="dessert" value="dessert2" class="menu__input" id="dessert-2">
+                    <label for="dessert-2" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Crème brulée</span>
+                                <span class="menu__description">Revisitée</span>
+                            </span>
+                            <span class="menu__price">22€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                    <input type="radio" name="dessert" value="dessert3" class="menu__input" id="dessert-3">
+                    <label for="dessert-3" class="cards menu__cards">
+                            <span class="menu__name-description">
+                                <span class="menu__name">Tiramisu</span>
+                                <span class="menu__description">À la noisette</span>
+                            </span>
+                            <span class="menu__price">23€</span>
+                        <span class="menu__check">
+                            <span class="fas fa-circle-check menu__check__icon"></span>
+                        </span>
+                    </label>
+                </section>
+                <button type="submit" class="btn menu__btn">Commander</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h1 class="footer__title shrikhand">ohmyfood</h1>
+            <ul>
+                <li class="footer__item">
+                    <i class="fa-solid fa-utensils fa-2xs fa-fw footer__item__icon"></i>
+                    <a href="#" class="footer__link">Proposer un restaurant</a>
+                </li>
+                <li class="footer__item">
+                    <i class="fa-solid fa-handshake-angle fa-2xs fa-fw footer__item__icon"></i>
+                    <a href="#" class="footer__link">Devenir partenaire</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+                <li class="footer__item">
+                    <a href="mailto:contact@ohmyfood.fr" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

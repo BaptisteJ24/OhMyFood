@@ -11,7 +11,16 @@ $color: ( // Colors
     purple : #9356DC,
     pink : #FF79DA,
     green : #99E2D0,
-    beige : #f7f7f7
+    beige : #f7f7f7,
+    dark-grey : #353535,
+);
+
+$color-name : (
+    color-primary : map-get($color, purple),
+    color-secondary : map-get($color, pink),
+    color-tertiary : map-get($color, green),
+    color-quaternary : map-get($color, beige),
+    color-quinary : map-get($color, dark-grey)
 );
 
 $border-radius : ( // Border Radius

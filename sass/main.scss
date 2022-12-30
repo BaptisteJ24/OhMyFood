@@ -1,6 +1,7 @@
 @import "./Utils/variables";
 @import "./Utils/functions";
 @import "./Utils/mixins";
+@import "./Utils/animations";
 
 @import "./Base/reset";
 @import "./Base/typography";
@@ -9,5 +10,8 @@
 @import "./Components/cards";
 
 @import "./Layout/header";
-@import "./Layout/main";
+@import "./Layout/page";
 @import "./Layout/footer";
+
+@import "./Pages/home";
+@import "./Pages/menu";

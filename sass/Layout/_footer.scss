@@ -1,6 +1,6 @@
 // Footer
 .footer {
-    background-color: #353535;
+    background-color: get-color(color-quinary);
     width: 100%;
     height: 100%;
 
@@ -12,7 +12,7 @@
         width: 100%;
         height: 100%;
         padding: 15px 20px;
-        color: map-get($color, beige);
+        color: get-color(color-quaternary);
         margin: 0 auto;
 
         @include mobile-only {
