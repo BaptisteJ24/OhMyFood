@@ -197,46 +197,46 @@ h3 {
 .btn-heart {
   position: relative;
   width: 2em;
+  min-width: 2em;
   height: 2em;
   overflow: hidden;
   border: 0;
   background: transparent;
 }
-.btn-heart--empty {
+.btn-heart__icon {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-heart__icon--empty {
   font-size: 2em;
   z-index: 1;
   opacity: 1;
 }
-.btn-heart--hide {
-  position: relative;
+.btn-heart__icon--hide {
   -webkit-background-clip: text;
   background-image: linear-gradient(190deg, #9356DC, #FF79DA);
   color: transparent;
   font-size: 2em;
 }
-.btn-heart--hide__container {
+.btn-heart__icon--hide-container {
   max-height: 0;
   transition: max-height 600ms linear;
   overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   z-index: 2;
 }
-.btn-heart:active .btn-heart--hide, .btn-heart:hover .btn-heart--hide {
+.btn-heart:active .btn-heart__icon--hide, .btn-heart:hover .btn-heart__icon--hide {
   animation: progress-heart 600ms both ease-in-out;
 }
-.btn-heart:active .btn-heart--hide__container, .btn-heart:hover .btn-heart--hide__container {
+.btn-heart:active .btn-heart__icon--hide-container, .btn-heart:hover .btn-heart__icon--hide-container {
   max-height: 2em;
 }
-.btn-heart:active .btn-heart--empty, .btn-heart:hover .btn-heart--empty {
+.btn-heart:active .btn-heart__icon--empty, .btn-heart:hover .btn-heart__icon--empty {
   opacity: 0;
   transition: opacity 0ms 600ms linear;
 }
-.btn-heart:not(:active, :hover) .btn-heart--hide {
+.btn-heart:not(:active, :hover) .btn-heart__icon--hide {
   animation: reverse-progress-heart 600ms both;
 }
 
