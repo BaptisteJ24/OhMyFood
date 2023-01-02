@@ -1,14 +1,20 @@
 .menu {
     @include flex-container;
     flex-direction: column;
-    background-color: get-color(color-quaternary);
-    width: 100%;
-    height: 100%;
-    border-radius: map-get($border-radius, extra-large) map-get($border-radius, extra-large) 0 0;
-    transform: translate(0, -50px);
-
+    margin: 0 auto;
     padding: 30px 15px;
-    margin: 0 auto -50px;
+    max-width: 1400px;
+
+    @include mobile-only {
+        max-width: 515px;
+    }
+
+    &-container {
+        background-color: get-color(color-quaternary);
+        border-radius: map-get($border-radius, extra-large) map-get($border-radius, extra-large) 0 0;
+        transform: translate(0, -50px);
+        margin: 0 auto -50px;
+    }
 
     &__title-btn-heart {
         @include flex-container;
@@ -26,26 +32,28 @@
     }
 
     &__btn-heart {
-        padding: 10px;
         margin-right: 30px;
-    }
-
-    &__content {
-        @include flex-container;
-        flex-direction: column;
-        margin: 0 auto;
-
-        @include mobile-only {
-            max-width: 515px;
-        }
     }
 
     &__section {
         animation: opacity 1.5s ease-in-out both, translateY 1s ease-in-out both;
-
+        
         @for $i from 1 through 3 {
             &--#{$i} {
                 animation-delay: $i * 0.5s;
+            }
+        }
+
+        @include desktop-and-more {
+            width: 32%;
+            margin: 0 auto;
+        }
+
+        &-container {
+            @include flex-container;
+            flex-direction: column;
+            @include desktop-and-more {
+                flex-direction: row;
             }
         }
 
@@ -75,8 +83,9 @@
                 opacity: 1;
                 width: 20%;
                 transform: translateX(15px);
+
                 &__icon {
-                    transform : rotate(360deg);
+                    transform: rotate(360deg);
                 }
             }
         }
@@ -89,7 +98,7 @@
         height: map-get($cards-height, menu);
         max-height: map-get($cards-height, menu);
         padding: 15px;
-        overflow:hidden;
+        overflow: hidden;
     }
 
     &__name-description {
@@ -138,6 +147,7 @@
         transform: translateX(100%);
         transition: all 0.5s ease-in-out;
         opacity: 0;
+
         &__icon {
             font-size: map-get($font-size, 22px);
             transform: rotate(0);

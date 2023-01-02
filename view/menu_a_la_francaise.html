@@ -33,8 +33,8 @@
                 class="main-header__img">
         </header>
 
-        <form class="menu">
-            <div class="menu__content">
+        <form class="container menu-container">
+            <div class="menu">
                 <div class="menu__title-btn-heart">
                     <h1 class="menu__title shrikhand">À la française</h1>
                     <button class="btn-heart menu__btn-heart" type="button">
@@ -44,116 +44,118 @@
                         </span>
                     </button>
                 </div>
-                <section id="starters" class="menu__section menu__section--1">
-                    <h2 class="menu__section__title">Entrées</h2>
-                    <input type="radio" name="starter" value="starter1" class="menu__input" id="starter-1">
-                    <label for="starter-1" class="cards menu__cards">
+                <div class="container menu__section-container">
+                    <section id="starters" class="menu__section menu__section--1">
+                        <h2 class="menu__section__title">Entrées</h2>
+                        <input type="radio" name="starter" value="starter1" class="menu__input" id="starter-1">
+                        <label for="starter-1" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Tartare de poulpe acidulé</span>
                                 <span class="menu__description">Aux zestes d'orange</span>
                             </span>
                             <span class="menu__price">25€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                    <input type="radio" name="starter" value="starter2" class="menu__input" id="starter-2">
-                    <label for="starter-2" class="cards menu__cards">
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                        <input type="radio" name="starter" value="starter2" class="menu__input" id="starter-2">
+                        <label for="starter-2" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Velouté de légumes d'antan</span>
                                 <span class="menu__description">Carotte, panais, topinambour</span>
                             </span>
                             <span class="menu__price">35€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                    <input type="radio" name="starter" value="starter3" class="menu__input" id="starter-3">
-                    <label for="starter-3" class="cards menu__cards">
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                        <input type="radio" name="starter" value="starter3" class="menu__input" id="starter-3">
+                        <label for="starter-3" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Soupe à l'oignon</span>
                                 <span class="menu__description">Revisitée</span>
                             </span>
                             <span class="menu__price">20€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                </section>
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                    </section>
 
-                <section id="dishs" class="menu__section menu__section--2">
-                    <h2 class="menu__section__title">Plats</h2>
-                    <input type="radio" name="dish" value="dish1" class="menu__input" id="dish-1">
-                    <label for="dish-1" class="cards menu__cards">
+                    <section id="dishs" class="menu__section menu__section--2">
+                        <h2 class="menu__section__title">Plats</h2>
+                        <input type="radio" name="dish" value="dish1" class="menu__input" id="dish-1">
+                        <label for="dish-1" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Coquilles Saint-Jacques</span>
                                 <span class="menu__description">Accompagnées d'une purée de panais</span>
                             </span>
                             <span class="menu__price">40€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                    <input type="radio" name="dish" value="dish2" class="menu__input" id="dish-2">
-                    <label for="dish-2" class="cards menu__cards">
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                        <input type="radio" name="dish" value="dish2" class="menu__input" id="dish-2">
+                        <label for="dish-2" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Magret de canard</span>
                                 <span class="menu__description">Et parmentier de pommes de terre</span>
                             </span>
                             <span class="menu__price">35€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                    <input type="radio" name="dish" value="dish3" class="menu__input" id="dish-3">
-                    <label for="dish-3" class="cards menu__cards">
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                        <input type="radio" name="dish" value="dish3" class="menu__input" id="dish-3">
+                        <label for="dish-3" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Pigeonneau d’Ille-et-Vilaine</span>
                                 <span class="menu__description">Sur son lit de gnocchis aux légumes</span>
                             </span>
                             <span class="menu__price">44€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                </section>
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                    </section>
 
-                <section id="desserts" class="menu__section menu__section--1">
-                    <h2 class="menu__section__title">Dessert</h2>
-                    <input type="radio" name="dessert" value="dessert1" class="menu__input" id="dessert-1">
-                    <label for="dessert-1" class="cards menu__cards">
+                    <section id="desserts" class="menu__section menu__section--3">
+                        <h2 class="menu__section__title">Dessert</h2>
+                        <input type="radio" name="dessert" value="dessert1" class="menu__input" id="dessert-1">
+                        <label for="dessert-1" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Pétales de violettes glacés</span>
                                 <span class="menu__description">Et purée de noisettes</span>
                             </span>
                             <span class="menu__price">18€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                    <input type="radio" name="dessert" value="dessert2" class="menu__input" id="dessert-2">
-                    <label for="dessert-2" class="cards menu__cards">
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                        <input type="radio" name="dessert" value="dessert2" class="menu__input" id="dessert-2">
+                        <label for="dessert-2" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Fondant au chocolat</span>
                                 <span class="menu__description">Revisité</span>
                             </span>
                             <span class="menu__price">22€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                    <input type="radio" name="dessert" value="dessert3" class="menu__input" id="dessert-3">
-                    <label for="dessert-3" class="cards menu__cards">
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                        <input type="radio" name="dessert" value="dessert3" class="menu__input" id="dessert-3">
+                        <label for="dessert-3" class="cards menu__cards">
                             <span class="menu__name-description">
                                 <span class="menu__name">Millefeuille croustillant</span>
                                 <span class="menu__description">Myrtilles et pâte d’amande</span>
                             </span>
                             <span class="menu__price">23€</span>
-                        <span class="menu__check">
-                            <span class="fas fa-circle-check menu__check__icon"></span>
-                        </span>
-                    </label>
-                </section>
+                            <span class="menu__check">
+                                <span class="fas fa-circle-check menu__check__icon"></span>
+                            </span>
+                        </label>
+                    </section>
+                </div>
                 <button type="submit" class="btn menu__btn">Commander</button>
             </div>
         </form>
@@ -162,7 +164,7 @@
     <footer class="footer">
         <div class="footer-content">
             <h1 class="footer__title shrikhand">ohmyfood</h1>
-            <ul>
+            <ul class="footer__list">
                 <li class="footer__item">
                     <i class="fa-solid fa-utensils fa-2xs fa-fw footer__item__icon"></i>
                     <a href="#" class="footer__link">Proposer un restaurant</a>

@@ -13,7 +13,7 @@
     &__text {
         font-size: map-get($font-size, 18px);
         font-weight: 500;
-        margin : 50px auto;
+        margin: 50px auto;
     }
 
     &__icons {
@@ -24,11 +24,14 @@
         font-size: 3em;
         margin: 0 15px;
         animation: loader infinite 0.3s alternate;
-        @each $key, $value in $color-name {
+
+        @each $key,
+        $value in $color-name {
             &--#{$key} {
                 color: $value;
             }
         }
+
         @for $i from 1 through 3 {
             &--#{$i} {
                 animation-delay: calc(($i - 1) * 0.1s);
@@ -37,10 +40,8 @@
     }
 }
 
-
-
 .location {
-    background-color: #eaeaea;
+    background-color: darken(get-color(color-quaternary), 5%);
     width: 100%;
     text-align: center;
     padding: 15px 0;
@@ -48,6 +49,7 @@
 
     &__icon {
         margin-right: 10px;
+        color: rgba(black, 0.8);
     }
 
     &__text {
@@ -62,7 +64,7 @@
     padding: 35px 0;
     text-align: center;
 
-    &--beige {
+    &--color-quaternary {
         background-color: get-color(color-quaternary);
     }
 
@@ -72,6 +74,9 @@
         min-width: 187px;
         margin-bottom: 15px;
 
+        @include tablet-and-more {
+            max-width: 540px;
+        }
     }
 
     &__paragraph {
@@ -81,6 +86,10 @@
         max-width: 416px;
         min-width: 315px;
         margin-bottom: 30px;
+
+        @include tablet-and-more {
+            max-width: 540px;
+        }
     }
 
     &__btn {
@@ -91,17 +100,29 @@
 .functioning {
     padding: 35px 20px;
     margin: 10px auto 0;
+    max-width: 1440px;
 
     @include mobile-only {
         max-width: 515px;
     }
 
+    @include tablet-only {
+        max-width: 540px;
+    }
+
     &__title {
         margin: 0 0 30px -15px;
+        @include desktop-and-more {
+            margin: 0 0 30px 0;
+        }
     }
 
     &__list {
         list-style-type: none;
+
+        @include desktop-and-more {
+            @include flex-container;
+        }
     }
 
     &__cards {
@@ -113,6 +134,10 @@
         padding: 0 1% 0 0;
         margin-bottom: 25px;
         counter-increment: number;
+
+        @include desktop-and-more {
+            width: 30%;
+        }
 
         &::before {
             // This is the number brefore the card.
@@ -135,9 +160,14 @@
 .restaurant {
     padding: 50px 20px 20px;
     margin: 0 auto;
+    max-width: 1440px;
 
     @include mobile-only {
         max-width: 515px;
+    }
+
+    @include tablet-only {
+        max-width: 540px;
     }
 
     &-container {
@@ -157,6 +187,18 @@
         width: 100%;
         margin-bottom: 25px;
         height: 100%;
+
+        @include desktop-and-more {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        @include desktop-and-more {
+            width: 48%;
+        }
     }
 
     &__cards {
@@ -166,11 +208,21 @@
         height: map-get($cards-height, restaurant);
         max-height: map-get($cards-height, restaurant);
         position: relative;
+
+        @include large-screen-and-more {
+            height: map-get($cards-height, restaurant-large-screen);
+            max-height: map-get($cards-height, restaurant-large-screen);
+        }
+
     }
 
     .img-container {
         width: 100%;
         height: calc(map-get($cards-height, restaurant) * 70/100);
+
+        @include large-screen-and-more {
+            height: calc(map-get($cards-height, restaurant-large-screen) * 70/100);
+        }
 
         >.img-tag {
             position: absolute;
@@ -216,7 +268,7 @@
 
         &__btn {
             width: 30%;
-            margin: auto 0;
+            margin: auto;
             text-align: center;
         }
     }
