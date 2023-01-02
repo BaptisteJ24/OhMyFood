@@ -63,6 +63,7 @@
 
         &--hide {
             -webkit-background-clip: text;
+            background-clip: text;
             background-image: linear-gradient(190deg, get-color(color-primary), get-color(color-secondary));
             color: transparent;
             font-size: 2em;
