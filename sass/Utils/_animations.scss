@@ -73,33 +73,9 @@
     }
 }
 
-@keyframes translateX {
-    0% {
-        transform: translateX(calc(100%));
-    }
-    100% {
-        transform: translateX(15px);
-    }
-}
-
-@keyframes scaleX {
-    0% {
-        transform: scaleX(0);
-    }
-    100% {
-        transform: scaleX(1);
-    }
-}
-
 @keyframes loader {
     100% {
         transform: translateY(-30px);
-    }
-}
-
-@keyframes scale-plate {
-    100% {
-        transform: scale(0.7);
     }
 }
 

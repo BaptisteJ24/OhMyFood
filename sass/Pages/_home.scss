@@ -54,6 +54,9 @@
 
     &__text {
         font-weight: 500;
+        border: 0;
+        background-color: transparent;
+        width: 130px;
     }
 }
 
@@ -213,13 +216,11 @@
             height: map-get($cards-height, restaurant-large-screen);
             max-height: map-get($cards-height, restaurant-large-screen);
         }
-
     }
 
     .img-container {
         width: 100%;
         height: calc(map-get($cards-height, restaurant) * 70/100);
-
         @include large-screen-and-more {
             height: calc(map-get($cards-height, restaurant-large-screen) * 70/100);
         }

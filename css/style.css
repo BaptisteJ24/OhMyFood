@@ -69,30 +69,9 @@
     transform: translateY(0);
   }
 }
-@keyframes translateX {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(15px);
-  }
-}
-@keyframes scaleX {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
 @keyframes loader {
   100% {
     transform: translateY(-30px);
-  }
-}
-@keyframes scale-plate {
-  100% {
-    transform: scale(0.7);
   }
 }
 @keyframes fadeout {
@@ -448,6 +427,9 @@ h3 {
 }
 .location__text {
   font-weight: 500;
+  border: 0;
+  background-color: transparent;
+  width: 130px;
 }
 
 .presentation {
@@ -757,14 +739,14 @@ h3 {
 .menu__input:checked + .menu__cards .menu__check {
   opacity: 1;
   width: 20%;
-  transform: translateX(15px);
+  transform: translateX(16px);
 }
 .menu__input:checked + .menu__cards .menu__check__icon {
   transform: rotate(360deg);
 }
 .menu__cards {
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   height: 70px;
   max-height: 70px;
@@ -803,13 +785,12 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: center;
   height: 70px;
   background-color: #99E2D0;
   color: white;
   border-radius: 0 15px 15px 0;
   width: 0%;
-  will-change: min-width, width, opacity, transform;
+  will-change: width, opacity, transform;
   transform: translateX(100%);
   transition: all 0.5s ease-in-out;
   opacity: 0;
