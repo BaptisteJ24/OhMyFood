@@ -146,6 +146,7 @@ h3 {
   width: fit-content;
   font-size: 0.9375rem;
   position: relative;
+  z-index: 1;
   cursor: pointer;
   transition: box-shadow 0.3s ease-in-out;
 }
@@ -168,6 +169,7 @@ h3 {
   background: linear-gradient(#ff93e1, #a16be0);
   border-radius: 30px;
   opacity: 0;
+  z-index: -1;
   transition: opacity 0.3s ease-in-out;
 }
 
