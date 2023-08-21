@@ -11,6 +11,6 @@ Compétences :
 
 Fait par : Baptiste JAN.
 
-Disponible sur : https://baptistej24.github.io/Projet_3_OhMyFood/
+Disponible sur : https://baptistej24.github.io/OhMyFood/
 
 Mis à jour le 05/12/2022.
