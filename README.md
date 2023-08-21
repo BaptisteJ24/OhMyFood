@@ -1,4 +1,4 @@
-# Projet_3_OhMyFood
+# OhMyFood
 
 Mission : Dynamisez une page web avec des animations CSS.
 
